@@ -48,6 +48,7 @@ body {
 .content h1 {
   font-size: 40px;
   color: var(--dark-slate-grey);
+  line-height: 1;
 }
 
 .content p {
