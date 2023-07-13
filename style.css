@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  background-color: #fff;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content {
+  padding: 40px 24px;
+}
+
+.container .image {
+  background-image: url(assets/images/illustration-sign-up-mobile.svg);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Adjust the aspect ratio as needed (e.g., 16:9 = 56.25%) */
+  border-radius:  0 0 16px 16px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: var(--dark-slate-grey);
+}
+
+.content p {
+  margin: 24px 0;
+  color: var(--dark-slate-grey);
+  line-height: 150%;
+}
+
+.feature {
+  color: var(--dark-slate-grey);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  line-height: 150%;
+}
+
+.feature img {
+  height: 21px;
+  width: 21px;
+}
+
+.form-control label {
+  display: block;
+  font-size: 12px;
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+  margin-block: 41px 8px;
+}
+
+.form-control input {
+  color: var(--dark-slate-grey);
+  font-size: 16px;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-control small {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  visibility: hidden;
+}
+
+.form.error small {
+  color: var(--vermellion, #FF6155);
+  visibility: visible;
+}
+
+.form.error input {
+  background: rgba(255, 97, 85, 0.15);
+  color: var(--vermellion, #FF6155);
+  border: 1px solid var(--vermellion, #FF6155);;
+}
+
+.btn {
+  background-color: var(--dark-slate-grey);
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  border: none;
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form .btn:hover {
+  background: var(
+    --gradient-1,
+    linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%)
+  );
+
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.modal-container {
+  display: none;
+  padding: 149px 24px 40px 24px;
+}
+
+.modal-container img {
+  width: 64px;
+  height: 64px;
+}
+
+.modal-container h1 {
+  color: var(--dark-slate-grey);
+  font-size: 40px;
+  line-height: 1;
+  margin-block: 40px 24px;
+}
+
+.modal-container p {
+  color: var(--dark-slate-grey);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.modal-container .btn-dismiss {
+  margin-top: 281px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-container .btn-dismiss:hover {
+  background: var(
+    --gradient-1,
+    linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%)
+  );
+
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.email-success {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  .modal-container {
+    padding: 149px 60px 40px 60px;
+    margin: 280px auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .modal-container {
+    background-color: #fff;
+    padding: 48px 64px 64px 64px;
+    width: 504px;
+    height: 520px;
+    border-radius: 36px;
+  }
+
+  .modal-container h1 {
+    color: var(--dark-slate-grey);
+    font-size: 56px;
+  }
+
+  .modal-container .btn-dismiss {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 978px) {
+  body {
+    background-color: var(--charcoal-grey);
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: row;
+    min-width: 0;
+    width: 95%;
+    max-width: 928px;
+    height: 641px;
+    border-radius: 36px;
+    padding: 24px;
+    margin: 220px auto;
+  }
+
+  .container .content {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .container .image {
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    min-height: 593px;
+  }
+
+  .content h1 {
+    font-size: 56px;
+  }
+
+  .content {
+    padding: 73px 54px 74px 40px;
+  }
+}
