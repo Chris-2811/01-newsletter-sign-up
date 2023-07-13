@@ -124,9 +124,11 @@ body {
   background-color: var(--dark-slate-grey);
   color: #fff;
   display: inline-block;
+  font-size: 16px;
   width: 100%;
   border: none;
-  padding: 18px;
+  padding-block: 18px 14px;
+  line-height: 1.5;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
