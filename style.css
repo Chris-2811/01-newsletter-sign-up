@@ -72,14 +72,12 @@ body {
   width: 21px;
 }
 
-
-
 .form-control label {
   display: block;
   font-size: 12px;
   color: var(--dark-slate-grey);
   font-weight: 700;
-  margin-block: 41px 8px;
+  margin-block: 41px 10px;
 }
 
 .form-control input {
