@@ -54,7 +54,7 @@ body {
 .content p {
   margin: 24px 0;
   color: var(--dark-slate-grey);
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .feature {
@@ -72,9 +72,7 @@ body {
   width: 21px;
 }
 
-.form {
-  margin-top: 40px;
-}
+
 
 .form-control label {
   display: block;
@@ -87,7 +85,8 @@ body {
 .form-control input {
   color: var(--dark-slate-grey);
   font-size: 16px;
-  padding: 16px;
+  padding: 15px;
+  line-height: 1.5;
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
