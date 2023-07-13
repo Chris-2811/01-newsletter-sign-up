@@ -71,6 +71,10 @@ body {
   width: 21px;
 }
 
+.form {
+  margin-top: 40px;
+}
+
 .form-control label {
   display: block;
   font-size: 12px;
@@ -125,6 +129,7 @@ body {
   padding: 18px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .form .btn:hover {
@@ -224,8 +229,8 @@ body {
   }
 
   .container .content {
-    width: 50%;
-    max-width: 50%;
+    width: 55%;
+    max-width: 55%;
   }
 
   .container .image {
@@ -234,7 +239,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 50%;
+    width: 400px;
     min-height: 593px;
   }
 
@@ -243,6 +248,6 @@ body {
   }
 
   .content {
-    padding: 73px 54px 74px 40px;
+    padding: 73px 64px 74px 40px;
   }
 }
